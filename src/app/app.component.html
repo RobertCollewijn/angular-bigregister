@@ -4,6 +4,12 @@
     {{ title }}!
   </h1>
 
-  <button mat-raised-button color="primary">19919077501</button>
+<div>
+    <mat-form-field>
+      <input matInput placeholder="BIG registratie" [(ngModel)]="registrationNumber" #name="ngModel">
+    </mat-form-field>
+  <button mat-raised-button color="primary" (click)="getBigRegistration()">Zoek</button>
+</div>
+  <h2>{{mailingName}}</h2>
 </div>
 

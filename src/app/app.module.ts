@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {MaterialModule} from "./app.material";
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -12,6 +14,8 @@ import {MaterialModule} from "./app.material";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     MaterialModule,
   ],
   exports: [MaterialModule],
